@@ -1,92 +1,199 @@
-.brown {
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1d1d1d;
+}
+
+.white {
     color: white;
 }
-.main-nav {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-.main-nav a, .nav a { 
-    text-decoration: none;
-    padding: 0 15px;
-    font-size: 14px;
-    font-family: 'Inter', sans-serif;
-}
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-}
 
-.nav-right {
-    display: flex;
-    align-items: center;
+.bg-dark {
+    background-color: #1d1d1d;
 }
-.naiv a{
-    padding: 0 15px;
-}
-.main-nav a {
-    text-decoration: none;
-    padding: 0 15px;
-    font-size: 14px;
-  
-    font-family: 'Inter', sans-serif;
-}
-
 
 .buy {
     border-radius: 4px;
-    padding: 10px 15px; 
+    padding: 10px 15px;
     color: #1d1d1d;
     background-color: white;
-    margin-left: 10px;
+    font-weight: bold;
+    display: inline-block;
     text-decoration: none;
-    font-weight: bold; 
-    display: inline-block; 
 }
+
 .padding-section {
-    padding: 40px 24px; 
+    padding: 80px 24px;
 }
-.bg-yellow {
-    background-color: #1d1d1d;
-}
-.container { 
+
+.container {
     margin: auto;
-    max-width: 800px;
-    
+    max-width: 1200px;
+    padding: 0 20px;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    gap: 30px; 
-
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
+
 .container-block {
-    display: block; 
+    display: block;
 }
 
-
-.cards-wrapper{
+.row {
     display: flex;
     flex-direction: row;
-    gap: 30px; 
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 
-.alignement {
+.colonne {
+    flex-direction: column;
+}
+
+.main-nav {
+    padding: 20px 24px;
     display: flex;
-    justify-content: center; 
-    gap: 10px;
-    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
 }
-.alignement img {
-    width: 20%; 
-    height: auto;
-    max-width: 120px;
-    object-fit: cover;
+
+.nav-left{
+    display: flex;
+    align-items: start;
+    gap: 15px;
 }
-.wrap{
+
+.main-nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+h2{
+    color: white;   
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-family: "epilogue";
+    font-style: 600%;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    /*marge entre les elements*/
+    font-size: 28px;
+    font-family: "epilogue";
+    font-style: 600%;
+}
+h4{
+
+    font-size: 24px;
+    font-family: "epilogue";
+    font-style: 600%;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px; 
+    height: 200px;
+    margin-left: auto;
+    margin-right:auto ;
+}
+
+.card-services{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner img {
+    max-width: 150px;
+    height: auto;
+    width: auto;
+}
+
+.card-services img {
+    width: 350px;
+    height: 300px;
+    max-width: auto;
+    max-height: auto;
+    gap: 20px;
+}
+
+.client img {
+    max-width: 100px;
+}
+
+.realisations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.realisation-card {
+    width: 31%;
+}
+
+.etoile {
+    flex-direction: row;
+}
+
+.etoile img {
+    border-radius: 50%;
+    max-width: 10px;
+}
+
+.card-temoignage {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pp {
+    width: 50px;
+    border-radius: 30%;
+}
+
+.temoignages-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.card-avis-content {
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 500px; 
+    width: 30%; 
+    background-color: rgb(220, 212, 212);
+    color: #1d1d1d;
+    padding: 30px;
+  
+    p {
+        font-size: 25px;
+    }
+}
+
+
+.review-text {
+    flex-grow: 1; 
+    margin-bottom: 20px;
 }
